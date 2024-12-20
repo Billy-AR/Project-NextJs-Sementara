@@ -1,6 +1,6 @@
-import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
-function BreadCrum({ name }: { name: string }) {
+function BreadCrumbs({ name }: { name: string }) {
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -24,4 +24,4 @@ function BreadCrum({ name }: { name: string }) {
   );
 }
 
-export default BreadCrum;
+export default BreadCrumbs;
