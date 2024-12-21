@@ -11,8 +11,8 @@ function SignOutLink() {
   };
   return (
     <SignOutButton>
-      <Link href="/" className="w-full text-left" onClick={handleLogout}>
-        Logout
+      <Link href="/" className="w-full bg-red-700 p-1 rounded text-white text-center font-bold hover:scale-110 transition-transform duration-200" onClick={handleLogout}>
+        Log Out
       </Link>
     </SignOutButton>
   );
