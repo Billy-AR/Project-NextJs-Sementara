@@ -1,7 +1,6 @@
 import CheckboxInput from "@/components/form/CheckboxInput";
 import FormContainer from "@/components/form/FormContainer";
 import FormInput from "@/components/form/FormInput";
-import { Button } from "@/components/ui/button";
 import { faker } from "@faker-js/faker";
 import { createProductAction } from "@/utils/action";
 import PriceInput from "@/components/form/PriceInput";
