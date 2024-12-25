@@ -6,7 +6,7 @@ import { LuShare2 } from "react-icons/lu";
 import { TwitterShareButton, EmailShareButton, LinkedinShareButton, TwitterIcon, EmailIcon, LinkedinIcon, WhatsappShareButton, WhatsappIcon } from "react-share";
 
 function ShareButton({ productId, name }: { productId: string; name: string }) {
-  const url = process.env.NEXT_PUBLIX_WEBSITE_URL;
+  const url = process.env.NEXT_PUBLIC_WEBSITE_URL;
   const shareLink = `${url}/products/${productId}`;
 
   return (
