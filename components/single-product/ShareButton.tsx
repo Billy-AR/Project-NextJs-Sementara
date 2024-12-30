@@ -16,7 +16,7 @@ function ShareButton({ productId, name }: { productId: string; name: string }) {
           <LuShare2 />
         </Button>
       </PopoverTrigger>
-      <PopoverContent side="top" align="end" sideOffset={10} className="flex items-center gap-x-2 justify-center w-full">
+      <PopoverContent side="top" align="center" sideOffset={10} className="flex items-center gap-x-2 justify-center w-full">
         <TwitterShareButton url={shareLink} title={name}>
           <TwitterIcon size={32} round />
         </TwitterShareButton>
