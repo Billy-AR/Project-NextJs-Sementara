@@ -7,7 +7,6 @@ import db from "@/utils/db";
 
 export const GET = async (req: NextRequest) => {
   const { searchParams } = new URL(req.url);
-
   const session_id = searchParams.get("session_id") as string;
 
   try {
@@ -26,7 +25,6 @@ export const GET = async (req: NextRequest) => {
         },
       });
     }
-
     await db.cart.delete({
       where: {
         id: cartId,
@@ -34,7 +32,10 @@ export const GET = async (req: NextRequest) => {
     });
   } catch (error) {
     console.log(error);
-    return Response.json(null, { status: 500, statusText: "Internal server Error" });
+    return Response.json(null, {
+      status: 500,
+      statusText: "Internal Server Error",
+    });
   }
   redirect("/orders");
 };
